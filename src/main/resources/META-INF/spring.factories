@@ -1,0 +1,4 @@
+## Spring AutoConfiguration Configs
+# Utils For Spring Contexts, Beans, Injects.
+org.springframework.context.ApplicationContextInitializer=\
+sunkey.common.spring.Spring
