@@ -13,7 +13,12 @@ public class MyApplication {
 public class MyMqMessageHandler {
     
     @MessageListener(topic="${ons.order.topic}", tags="*")
-    public Action handleMyOrderMessage(String topic, String tag, String body, byte[] data, Message message, ConsumeContext context){
+    public Action handleMyOrderMessage(String topic, 
+                                       String tag, 
+                                       String body, 
+                                       byte[] data, 
+                                       Message message, 
+                                       ConsumeContext context){
         // do something...
         return Action.CommitMessage;
     }
